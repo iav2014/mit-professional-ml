@@ -15,10 +15,10 @@ The output of the neural network simulates the orders to be given
 to the wheel motors, in order to avoid obstacles.
 
  4 servo wheels,
-                  center infrared
-  left infrared        /-|-\ right infrared
-  front left wheel [|]-------[|] front right wheel
-  rear left wheel  [|]-------[|] rear right wheel
+#                  center infrared
+#  left infrared -----> /-|-\ <----- right infrared
+#  front left wheel [|]-------[|] front right wheel
+#  rear left wheel  [|]-------[|] rear right wheel
 
   inputs:
   infrared: left 1000, too near left : 1100
