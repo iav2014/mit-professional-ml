@@ -46,7 +46,7 @@ macbookpro 2017, 15" 16Gb i7 ssd
 
 ::
 
-    $ python3 train.py -d dataset -m model/medical -l labels/labels-medical -p metrics/plt-medical.png
+    $ python3 train.py -d dataset -m model/medical.model -l labels/labels-medical -p metrics/plt-medical.png
 
 Test & classify
 ---------------
@@ -54,8 +54,8 @@ for classification see: dataset.xlsx
 test bening/malignant
 
 ::
-    $ python3 classify.py -m model/medical -l labels/labels-medical -i test/malignant/000023-Malignant-DCIS.png
-    $ python3 classify.py -m model/medical -l labels/labels-medical -i test/benign/000130-Benign-CYST.png
+    $ python3 classify.py -m model/medical.model -l labels/labels-medical -i test/malignant/000023-Malignant-DCIS.png
+    $ python3 classify.py -m model/medical.model -l labels/labels-medical -i test/benign/000130-Benign-CYST.png
 
 
 License
